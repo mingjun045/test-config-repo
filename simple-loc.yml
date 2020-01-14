@@ -1,5 +1,3 @@
-leekyoungil:
-  profile: i'm beta
-  said:
-    first: Hello
-    second: world
+app:
+  stream:
+    duration: 2
