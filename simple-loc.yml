@@ -1,3 +1,22 @@
 app:
+  message: App refreshable message from development profile - Update 78901234567888
   stream:
     duration: 2
+  kafka:
+    servers: kafka-svc:9092
+    consumer:
+      group: simple
+      topics: base-event,control-event
+      update: 
+        topic: control-event
+    producer:
+      analyzed: analyzed-data
+      correlated: correlated-event
+      watchlist: watch-list
+      alram: analyzed-event
+  jdbc:
+    url: db.internal.secudiumiot.com
+    port: 5432
+    db: secuiot
+    user: secuiot_app
+    pwd: app1q2w3e4r
